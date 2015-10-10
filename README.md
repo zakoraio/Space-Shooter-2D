@@ -1,1 +1,2 @@
-# Space-Shooter-2D
+Project uses SDL library.
+Tested on linux environment.
