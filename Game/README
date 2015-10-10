@@ -1,0 +1,71 @@
+Name:Saurabh Rai
+Clemson Email Address:saurabr@clemson.edu
+
+Project no: 5
+Project due date: 10th APRIL
+
+=======================================================
+Sprites for my project (technology, how built, source):
+=======================================================
+
+1)player sprite : taken from http://seiya-ookami.deviantart.com/art/Pixel-spaceship-animated-gif-149460313 , Artist : seiya-ookami. 
+
+2) Blue Jet: takien from http://millionthvector.blogspot.com/p/free-sprites_12.html
+======================================================================
+Project description: (what it does, what it doesn't do, any specific
+   problems, any extras that you have added)
+======================================================================
+
+In this part of the project I have implemented basic player movements wherein player moves using keyboard and mouse.
+In the final part of the project I hope to build entire game wherein the player(Alien Space ship) is under attack by human invader and the goal its is to shoot down all the invaing ships and save
+the aliens planet from invasion.
+The game will have a health system for both the player and the invading shuuuu
+
+Collison Detection
+==================
+I have implemented a naive Collision detection which can be activated by pressing the key "C". Whenever a collison occurs the velocities of the colliding sprites are reversed, the physics of collision
+has not been taken into account yet to determine the resultant velocity vectors after the collision.Currently collison detection works only on single frame sprites i.e bat.png and eye.png.
+Proximity for collison detection can be changed from xml by changing the value of element collisionDistance.
+
+NOTE: Only after 5 seconds have passed after the application starts the collision detection can be activated I did this because it gives enough time for the sprites to spread out.
+
+Problems: Sprites may get trapped in collison loop and keep moving back and forth if there are too many sprites in the proximity, this happens because I am just reversing the velocity vector 
+on collison. For fixing this I need to incorporate angle of incidence and assign a bougs mass and elasticity value to each sprite and determine the kinetic energy associated with each sprite and
+finally determine the resultant velocity vector based on momentum of each sprite the dampening effect caused by the elasticity value associated with each sprite.
+
+Rotation
+========
+Pressing key "R" to activates rotation.It will rotate any of the sprite that is being tracked. Rotation speed can be changed by changed the value of rotationSpeed element 
+located inside each sprits element.
+
+Loading and Deleting Sprites on the Fly
+======================================
+
+To load more sprites press L to delete Sprites press U.The Sprites are loaded in increments of 20 (10 each bat.png and eye.png) and are deleted in the same number of increments.
+There is limit on max number of sprites that can be loaded and a limit on min number of Sprites these values can be configured through maxSprite and minSprite elements in Xml. 
+
+
+
+--------------------------------
+| Cap fps       |              |
+--------------------------------
+| Tracker       |              |
+--------------------------------
+| Sprites       |              |
+--------------------------------
+| Factory       |              |
+--------------------------------
+| Drawable*     |              |
+--------------------------------
+| game.xml      |              |
+--------------------------------
+| Leaks         |              |
+--------------------------------
+| F4/frames     |              |
+--------------------------------
+| Submission    |              |
+--------------------------------
+| README        |              |
+--------------------------------
+
+
