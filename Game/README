@@ -1,8 +1,3 @@
-Name:Saurabh Rai
-Clemson Email Address:saurabr@clemson.edu
-
-Project no: 5
-Project due date: 10th APRIL
 
 =======================================================
 Sprites for my project (technology, how built, source):
@@ -12,7 +7,7 @@ Sprites for my project (technology, how built, source):
 
 2) Blue Jet: takien from http://millionthvector.blogspot.com/p/free-sprites_12.html
 ======================================================================
-Project description: (what it does, what it doesn't do, any specific
+description: (what it does, what it doesn't do, any specific
    problems, any extras that you have added)
 ======================================================================
 
@@ -43,29 +38,5 @@ Loading and Deleting Sprites on the Fly
 
 To load more sprites press L to delete Sprites press U.The Sprites are loaded in increments of 20 (10 each bat.png and eye.png) and are deleted in the same number of increments.
 There is limit on max number of sprites that can be loaded and a limit on min number of Sprites these values can be configured through maxSprite and minSprite elements in Xml. 
-
-
-
---------------------------------
-| Cap fps       |              |
---------------------------------
-| Tracker       |              |
---------------------------------
-| Sprites       |              |
---------------------------------
-| Factory       |              |
---------------------------------
-| Drawable*     |              |
---------------------------------
-| game.xml      |              |
---------------------------------
-| Leaks         |              |
---------------------------------
-| F4/frames     |              |
---------------------------------
-| Submission    |              |
---------------------------------
-| README        |              |
---------------------------------
 
 
